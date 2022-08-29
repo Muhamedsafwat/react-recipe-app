@@ -1,0 +1,87 @@
+/* logo */
+
+.logo {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #e45700;
+}
+
+.logo svg {
+  font-size: 2rem;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-family: "lobster", cursive;
+}
+/* search */
+form {
+  margin: 4rem 7rem;
+  position: relative;
+}
+form input {
+  width: 100%;
+  padding: 0.8rem 3rem;
+  border-radius: 2rem;
+  background-color: #3c3a3c;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  outline: none;
+}
+
+form svg {
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(130%, -50%);
+}
+/* categories */
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+ul li {
+  text-align: center;
+}
+ul li .icon {
+  font-size: 1.7rem;
+  margin: auto;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background-color: #3c3a3c;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+ul li:hover .icon {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px rgba(55, 55, 55, 0.2);
+  background-color: #f27121;
+}
+
+ul .active .icon {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px rgba(55, 55, 55, 0.2);
+  background-color: #f27121;
+}
+ul .active h4,
+ul li:hover h4 {
+  color: #f27121;
+}
+
+nav a {
+  color: rgb(55, 55, 55);
+  text-decoration: none;
+}
